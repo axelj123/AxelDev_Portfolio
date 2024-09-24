@@ -31,6 +31,9 @@ body.dark-mode {
     --border-color-skills: #0e162a;
 }
 
+* {
+    position: relative;
+}
 
 body {
     background: var(--background-gradient);
@@ -66,13 +69,13 @@ body {
 
 
 .header {
-    padding: 10px;
     position: fixed;
     z-index: 1000;
     top: 0;
     width: 100%;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
+    min-width: 430px;
 }
 
 a {
@@ -105,8 +108,8 @@ li {
 
 .contenedor-menu ul {
     display: flex;
-    padding: 0;
-    margin: 0;
+    margin: 10px;
+
 }
 
 .contenedor-menu li {
@@ -184,10 +187,8 @@ li {
 
 /* ---------------------------------SECTION HOME------------------------------ */
 .section {
-
-    margin-right: auto;
-    margin-left: auto;
-    width: 740px;
+    margin: 0 auto;
+    justify-content: center;
 
 }
 
@@ -385,7 +386,7 @@ li {
 #proyects {
     padding: 2rem;
     padding-top: 100px;
-    
+
 }
 
 
@@ -544,10 +545,7 @@ li {
 
 .skills_content p {
     color: var(--text-color);
-    line-height: 1.5rem;
-    max-width: 800px;
-    width: auto;
-    margin: 22px auto;
+
 }
 
 .grid-tecnologias {
@@ -671,34 +669,78 @@ footer {
     text-decoration: underline;
 }
 
-
 /* --------------------------------- SCREEN FOR TABLETS ------------------------------ */
 @media (max-width: 811px) {
 
-  
     .contenedor-menu,
     .contenedor-social-header {
         display: none;
-        /* Ocultar por defecto */
     }
 
     .menu-hamburguesa {
         display: block;
     }
 
-    .contenedor-menu.active {
+    .active {
         display: block;
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
-        
     }
-    
+
+    .active2 {
+        height: calc(24px * 15);
+    }
 
     .contenedor-menu ul {
         display: block;
         text-align: center;
     }
 
+
+
+    .active3 {
+        display: flex;
+        position: absolute;
+        top: calc(100% + 200px);
+        margin-top: 20px;
+        right: auto;
+        left: auto;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contenedor-header {
+        padding: 10px 20px;
+
+    }
+
+    /* --- Tecnologias ---- */
+    .grid-tecnologias {
+        display: block;
+    }
+
+    .grid-skill {
+        margin-bottom: 20px;
+    }
+
+    /* --- home ---- */
+    #Hola {
+        font-size: 30px;
+
+    }
+
+    .info-home h2 {
+        font-size: 16px;
+    }
+
+    .contenedor-home {
+        margin-top: 200px;
+    }
+    .direccion-experiencia-animated{
+        display: none;
+    }
+    
 }

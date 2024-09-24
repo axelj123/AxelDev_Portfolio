@@ -19,8 +19,8 @@
 
         <nav class="contenedor-header">
             <a href="" class="logo">AxelDev</a>
-          
-            
+
+
             <div class="contenedor-menu">
                 <ul>
                     <li><a href="#proyects">Proyectos</a></li>
@@ -32,7 +32,8 @@
 
             <div class="contenedor-social-header">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/axel-muñoz-silva-52171123a" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/axel-muñoz-silva-52171123a" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/axelj123" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li>
                         <button id="theme-toggle" aria-label="Toggle theme">
@@ -156,7 +157,11 @@
                     </figure>
                     <div class="text-proyect">
                         <h1 class="title-proyec">Red Social Talk</h1>
-                        <p class="parrafo-proyecto"></p>
+                        <p class="parrafo-proyecto">
+                            Desarrollado en el 6to ciclo de mi carrera, Talk es una red social centralizada
+                            que facilita el intercambio de recursos y opiniones.
+
+                        </p>
                         <ul>
                             <li>SpringBoot</li>
                             <li>Thymeleaf</li>
@@ -181,7 +186,7 @@
                     </figure>
                     <div class="text-proyect">
                         <h1 class="title-proyec">Luciano Gym</h1>
-                        <p class="parrafo-proyecto"></p>
+                        <p class="parrafo-proyecto">Desarrollo del software Luciano Gym, diseñado para optimizar la gestión y control de las membresías de los usuarios. </p>
                         <ul>
                             <li>Java</li>
                             <li>MySql</li>
@@ -330,7 +335,6 @@
     <footer>
         <div class="footer-content">
             <a href="#">AxelDev</a>
-            <span> Inspirado en cristianorrego.dev</span>
 
             <ul>
                 <li><a href="#">Proyectos</a></li>
@@ -339,13 +343,19 @@
             </ul>
 
         </div>
+        <span style="display: flex; justify-content: center; margin: 10px;"> Inspirado en cristianorrego.dev</span>
+
     </footer>
 
 
     <script>
-          document.getElementById('menu-toggle').addEventListener('click', function() {
+           document.getElementById('menu-toggle').addEventListener('click', function() {
         const menu = document.querySelector('.contenedor-menu');
+        const menu2 = document.querySelector('.header');
+        const menu3=document.querySelector('.contenedor-social-header');
         menu.classList.toggle('active'); 
+        menu2.classList.toggle('active2');
+        menu3.classList.toggle('active3');
     });
 
         const loadTheme = () => {
