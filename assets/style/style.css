@@ -15,7 +15,7 @@
     --border-color-skills: #0e162a;
 }
 
-body.dark-mode {
+body.light-mode {
     --background-gradient: linear-gradient(180deg, rgba(206, 234, 253, 1) 0%, rgba(249, 251, 252, 255) 15%);
     --background-gradient-menu: linear-gradient(180deg, rgba(206, 234, 253, 1) 0%, rgba(249, 251, 252, 255) 0%);
 

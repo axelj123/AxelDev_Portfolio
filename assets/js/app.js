@@ -10,11 +10,11 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 const loadTheme = () => {
    
     
-    document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+    document.body.classList.toggle('light-mode', savedTheme === 'light');
     const themeIcon = document.getElementById('theme-icon');
     
     if (savedTheme === 'dark') {
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
     }
 };
 
@@ -22,15 +22,15 @@ const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
 themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDarkMode = document.body.classList.contains('dark-mode');
+    document.body.classList.toggle('light-mode');
+    const isLightMode = document.body.classList.contains('light-mode');
 
     // Cambiar el ícono
-    if (isDarkMode) {
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    if (isLightMode) {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
         localStorage.setItem('theme', 'dark');
     } else {
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
         localStorage.setItem('theme', 'light');
     }
 });
