@@ -1,4 +1,21 @@
 :root {
+    --background-gradient: linear-gradient(180deg, #021d3b 1%, #020617 15%);
+    --background-gradient-menu: linear-gradient(180deg, #021d3b 0%, #020617 0%);
+    
+    --text-color: #f0f0f0;
+    --icon-color: #f0f0f0;
+    --span-color: #2cc8fe;
+    
+    --li-background: linear-gradient(90deg, #021d3b 1%, #020617 60%);
+    --carrera-color: #feb273;
+    --crear-color: #86e3e5;
+    --cards-color-experiencia: #2cc8fe;
+    --cards-color-proyectos: #0f172a;
+    --tarjetas-color-proyectos: #0c2941;
+    --border-color-skills: #0e162a;
+}
+
+body.dark-mode {
     --background-gradient: linear-gradient(180deg, rgba(206, 234, 253, 1) 0%, rgba(249, 251, 252, 255) 15%);
     --background-gradient-menu: linear-gradient(180deg, rgba(206, 234, 253, 1) 0%, rgba(249, 251, 252, 255) 0%);
 
@@ -12,23 +29,6 @@
     --cards-color-proyectos: #f1f4f8;
     --tarjetas-color-proyectos: #f1f4f8;
     --border-color-skills: #dadde0;
-}
-
-body.dark-mode {
-    --background-gradient: linear-gradient(180deg, #021d3b 1%, #020617 15%);
-    --background-gradient-menu: linear-gradient(180deg, #021d3b 0%, #020617 0%);
-
-    --text-color: #f0f0f0;
-    --icon-color: #f0f0f0;
-    --span-color: #2cc8fe;
-
-    --li-background: linear-gradient(90deg, #021d3b 1%, #020617 60%);
-    --carrera-color: #feb273;
-    --crear-color: #86e3e5;
-    --cards-color-experiencia: #2cc8fe;
-    --cards-color-proyectos: #0f172a;
-    --tarjetas-color-proyectos: #0c2941;
-    --border-color-skills: #0e162a;
 }
 
 * {
