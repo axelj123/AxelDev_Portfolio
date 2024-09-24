@@ -8,9 +8,7 @@ document.getElementById('menu-toggle').addEventListener('click', function() {
 });
 
 const loadTheme = () => {
-    const isFirstVisit = !localStorage.getItem('theme');
-    
-    const savedTheme = isFirstVisit ? 'dark' : localStorage.getItem('theme');
+   
     
     document.body.classList.toggle('dark-mode', savedTheme === 'dark');
     const themeIcon = document.getElementById('theme-icon');
