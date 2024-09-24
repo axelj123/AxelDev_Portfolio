@@ -187,9 +187,10 @@ li {
 
 /* ---------------------------------SECTION HOME------------------------------ */
 .section {
-    margin: 0 auto;
-    justify-content: center;
 
+    margin-right: auto;
+    margin-left: auto;
+  
 }
 
 .section h2 {
@@ -545,7 +546,7 @@ li {
 
 .skills_content p {
     color: var(--text-color);
-
+  
 }
 
 .grid-tecnologias {
