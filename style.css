@@ -184,14 +184,12 @@ li {
     transition: color 0.3s ease;
 }
 
-
+main{
+    width:50%;
+    margin: 0 auto;
+  } 
 /* ---------------------------------SECTION HOME------------------------------ */
-.section {
 
-    margin-right: auto;
-    margin-left: auto;
-  
-}
 
 .section h2 {
     margin-top: 20px;
@@ -203,6 +201,7 @@ li {
 .contenedor-home {
     display: flex;
     margin-top: 300px;
+    justify-content: center;
 }
 
 .home-social {
@@ -344,12 +343,10 @@ li {
 #experiencia {
     padding-top: 100px;
 
+    
 }
 
-#experiencia ul {
-    margin: 0;
-    padding: 0;
-}
+
 
 .cards-experiencia {
     padding-left: 20px;
@@ -673,6 +670,11 @@ footer {
 /* --------------------------------- SCREEN FOR TABLETS ------------------------------ */
 @media (max-width: 811px) {
 
+    main{
+        margin: 10px ;
+        padding: 10px;
+        width: auto;
+    }
     .contenedor-menu,
     .contenedor-social-header {
         display: none;
