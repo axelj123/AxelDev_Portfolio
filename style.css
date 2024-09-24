@@ -184,10 +184,11 @@ li {
     transition: color 0.3s ease;
 }
 
-main{
-    width:50%;
-    margin: 0 auto;
-  } 
+main {
+    max-width: 740px;
+    margin: auto;
+}
+
 /* ---------------------------------SECTION HOME------------------------------ */
 
 
@@ -343,9 +344,12 @@ main{
 #experiencia {
     padding-top: 100px;
 
-    
+
 }
 
+#experiencia ul {
+    padding: 0;
+}
 
 
 .cards-experiencia {
@@ -382,7 +386,6 @@ main{
 
 /* ---------------------------------SECTION PROYECTOS------------------------------ */
 #proyects {
-    padding: 2rem;
     padding-top: 100px;
 
 }
@@ -397,7 +400,6 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 2rem;
     position: relative;
 
 }
@@ -405,7 +407,6 @@ main{
 .cards-proyectos a {
     text-decoration: none;
     color: inherit;
-    padding: 5px;
     background-color: var(--cards-color-proyectos);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -543,7 +544,7 @@ main{
 
 .skills_content p {
     color: var(--text-color);
-  
+
 }
 
 .grid-tecnologias {
@@ -669,12 +670,15 @@ footer {
 
 /* --------------------------------- SCREEN FOR TABLETS ------------------------------ */
 @media (max-width: 811px) {
+    .body {
+        padding: 2px;
+    }
 
-    main{
-        margin: 10px ;
-        padding: 10px;
+    main {
+        margin: 10px;
         width: auto;
     }
+
     .contenedor-menu,
     .contenedor-social-header {
         display: none;
@@ -692,6 +696,16 @@ footer {
         width: 100%;
     }
 
+    .active ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .active ul li {
+        margin: 0;
+
+    }
+
     .active2 {
         height: calc(24px * 15);
     }
@@ -701,24 +715,47 @@ footer {
         text-align: center;
     }
 
-
-
+  
     .active3 {
-        display: flex;
-        position: absolute;
-        top: calc(100% + 200px);
-        margin-top: 20px;
-        right: auto;
-        left: auto;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
+        display: flex;                     
+        position: absolute;              
+        top: calc(100% + 200px);           
+        left: 50%;                        
+        transform: translateX(-50%);     
+        margin: auto;                     
+        max-width: 400px;                 
+        justify-content: center;         
+        align-items: center;                
+        padding: 20px;                     
     }
+    
+   
 
     .contenedor-header {
         padding: 10px 20px;
 
     }
+
+    /* --- Home ---- */
+    .hero-image {
+       display: none;
+    
+    }
+
+    .image-sobremi{
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-social {
+        margin-top: 20px;
+        padding: 0;
+    }
+    .home-social li a{
+        font-size: 9px;
+        padding: 2px;
+    }
+  
 
     /* --- Tecnologias ---- */
     .grid-tecnologias {
@@ -742,8 +779,16 @@ footer {
     .contenedor-home {
         margin-top: 200px;
     }
-    .direccion-experiencia-animated{
+
+    .direccion-experiencia-animated {
         display: none;
     }
-    
+
+}
+@media (max-width: 430px){
+    #menu-toggle {
+        padding-right: 48px;
+    }
+  
+
 }
