@@ -14,7 +14,7 @@ const loadTheme = () => {
     const themeIcon = document.getElementById('theme-icon');
     
     if (savedTheme === 'dark') {
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
     }
 };
 
